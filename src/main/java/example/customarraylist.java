@@ -19,14 +19,14 @@ public class customarraylist<A> implements realise<A> {
   @Override
   public A get(int index) {
     if (index < 0 || index >= size) {
-      throw new IndexOutOfBoundsExpection("Index out of bounds");
+      throw new IndexOutOfBoundsExpetion("Index out of bounds");
     }
     return (A) array[index];
   }
   @Override
   public void remove(int index) {
     if (index < 0 || index >= size) {
-      throw new IndexOutOfBoundsExpection("Index out of bounds");
+      throw new IndexOutOfBoundsExpetion("Index out of bounds");
     }
     for (int i = index; i < size - 1; i++) {
       array[i] = array[i + 1];
