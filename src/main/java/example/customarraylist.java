@@ -9,7 +9,7 @@ public class customarraylist<A> implements realise<A> {
   @Override
   public void add(A element) {
     if (element == null) {
-      throw new IncorrectPointer("Element not null");
+      throw new IllegalArgumentException("Element not null");
     }
     if (size == array.length) {
       resize();
@@ -19,14 +19,14 @@ public class customarraylist<A> implements realise<A> {
   @Override
   public A get(int index) {
     if (index < 0 || index >= size) {
-      throw new IncorrectIndex("Index out of bounds");
+      throw new IndexOutOfBoundsExpection("Index out of bounds");
     }
     return (A) array[index];
   }
   @Override
   public void remove(int index) {
     if (index < 0 || index >= size) {
-      throw new IncorrectIndex("Index out of bounds");
+      throw new IndexOutOfBoundsExpection("Index out of bounds");
     }
     for (int i = index; i < size - 1; i++) {
       array[i] = array[i + 1];
