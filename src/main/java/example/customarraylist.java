@@ -9,7 +9,7 @@ public class customarraylist<A> implements realise<A> {
   @Override
   public void add(A element) {
     if (element == null) {
-      throw new IllegalArgumentException("Element not null");
+      throw new NullPointerException("Element not null");
     }
     if (size == array.length) {
       resize();
