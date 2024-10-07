@@ -5,10 +5,10 @@ public class Main {
     Alist.add("first");
     Alist.add("second");
     Alist.add("third");
-    System.out.println(Alist.get(0)); // Apple
-    System.out.println(Alist.get(1)); // Banana
+    System.out.println(Alist.get(0)); 
+    System.out.println(Alist.get(1)); 
     Alist.remove(1);
-    System.out.println(Alist.get(0)); // Apple
-    System.out.println(Alist.get(1)); // Cherry
+    System.out.println(Alist.get(0)); 
+    System.out.println(Alist.get(1)); 
   }
 }
