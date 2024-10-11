@@ -12,3 +12,8 @@ public class Main {
     System.out.println(Alist.get(1)); 
   }
 }
+/**
+ * output:
+ * first second
+ * first third
+ */
