@@ -1,3 +1,6 @@
+/**
+ * example for our costumArrayList 
+ */ 
 package example;
 public class Main {
   public static void main(String[] args) {
