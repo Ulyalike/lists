@@ -1,11 +1,20 @@
+/**
+ * create realization of our customArrayList and add some elements "под капод"
+ */
 package example;
 public class customarraylist<A> implements realise<A> {
   private Object[] array;
   private int size;
+/**
+ * dinamic data structure extension to not exceed the size
+ */
   public customarraylist(int Capacity) {
     array = new Object[Capacity];
     size = 0;
   }
+/**
+ * add elements to the end of the list
+ */
   @Override
   public void add(A element) {
     if (element == null) {
@@ -16,6 +25,9 @@ public class customarraylist<A> implements realise<A> {
     }
     array[size++] = element;
   }
+/**
+ * return element by index
+ */
   @Override
   public A get(int index) {
     if (index < 0 || index >= size) {
@@ -23,6 +35,9 @@ public class customarraylist<A> implements realise<A> {
     }
     return (A) array[index];
   }
+/**
+ * remove element by index
+ */
   @Override
   public void remove(int index) {
     if (index < 0 || index >= size) {
@@ -33,6 +48,9 @@ public class customarraylist<A> implements realise<A> {
     }
     size--;
   }
+/**
+ * change the size of the list
+ */
   private void resize() {
     Object[] newArraylist = new Object[array.length * 2];
     System.arraycopy(array, 0, newArraylist, 0, array.length);
