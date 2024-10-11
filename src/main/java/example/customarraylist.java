@@ -13,7 +13,7 @@ public class customarraylist<A> implements realise<A> {
     size = 0;
   }
 /**
- * add elements to the end of the list
+ * add elements to the end of the list and check to not add null
  */
   @Override
   public void add(A element) {
@@ -26,7 +26,7 @@ public class customarraylist<A> implements realise<A> {
     array[size++] = element;
   }
 /**
- * return element by index
+ * return element by index and check to get the index which we have had
  */
   @Override
   public A get(int index) {
@@ -36,7 +36,7 @@ public class customarraylist<A> implements realise<A> {
     return (A) array[index];
   }
 /**
- * remove element by index
+ * remove element by index and check to get the index which we have had
  */
   @Override
   public void remove(int index) {
